@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 					if (weatherIcon == 800 && celsius >= 25) {
 						// clear, above 25deg
-						$(".container").css("background", "#FE938C");
+						$(".weatherapp").css("background", "#FE938C");
 						$(".icon").html(
 							'<img src="img/sunny.png" alt="clear-day">'
 						);
@@ -69,7 +69,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#FE938C");
 					} else if (weatherIcon == 800 && celsius <= 25) {
 						// clear, below 25deg
-						$(".container").css("background", "#8CADFE");
+						$(".weatherapp").css("background", "#8CADFE");
 						$(".icon").html(
 							'<img src="img/sunny.png" alt="clear-day">'
 						);
@@ -77,7 +77,7 @@ $(document).ready(function() {
 						$(".slider").addClass("yellow");
 					} else if (weatherIcon === 801) {
 						// few clouds
-						$(".container").css("background", "#8CADFE");
+						$(".weatherapp").css("background", "#8CADFE");
 						$(".icon").html(
 							'<img src="img/fewclouds.png" alt="few-clouds">'
 						);
@@ -85,7 +85,7 @@ $(document).ready(function() {
 						$(".slider").addClass("yellow");
 					} else if (weatherIcon >= 802 && weatherIcon <= 804) {
 						// clouded
-						$(".container").css("background", "#878787");
+						$(".weatherapp").css("background", "#878787");
 						$(".icon").html(
 							'<img src="img/cloudy.png" alt="cloudy">'
 						);
@@ -96,7 +96,7 @@ $(document).ready(function() {
 						(weatherIcon >= 500 && weatherIcon <= 531)
 					) {
 						// rain
-						$(".container").css("background", "#878787");
+						$(".weatherapp").css("background", "#878787");
 						$(".icon").html(
 							'<img src="img/rain.png" alt="rainy">'
 						);
@@ -104,7 +104,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#878787");
 					} else if (weatherIcon >= 200 && weatherIcon <= 232) {
 						// thunderstorm
-						$(".container").css("background", "#4E5A77");
+						$(".weatherapp").css("background", "#4E5A77");
 						$(".icon").html(
 							'<img src="img/thunderstorm.png" alt="thunderstorm">'
 						);
@@ -112,7 +112,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#4E5A77");
 					} else if (weatherIcon >= 600 && weatherIcon <= 622) {
 						// snow
-						$(".container").css("background", "#878787");
+						$(".weatherapp").css("background", "#878787");
 						$(".icon").html(
 							'<img src="img/snowy.png" alt="snowy">'
 						);
@@ -124,7 +124,7 @@ $(document).ready(function() {
 				function nightIcons() {
 					if (weatherIcon == 800) {
 						// clear
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/clearnight.png" alt="clear-night">'
 						);
@@ -132,7 +132,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#001548");
 					} else if (weatherIcon == 801) {
 						// few clouds
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/cloudynight.png" alt="few-clouds">'
 						);
@@ -140,7 +140,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#8CADFE");
 					} else if (weatherIcon >= 802 && weatherIcon <= 804) {
 						// cloudy
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/cloudy.png" alt="few-clouds">'
 						);
@@ -151,7 +151,7 @@ $(document).ready(function() {
 						(weatherIcon >= 500 && weatherIcon <= 531)
 					) {
 						// rain
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/Rain.png" alt="rainy">'
 						);
@@ -159,7 +159,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#878787");
 					} else if (weatherIcon >= 600 && weatherIcon <= 622) {
 						// snow
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/snowy.png" alt="snowy">'
 						);
@@ -167,7 +167,7 @@ $(document).ready(function() {
 						$(".deg").css("color", "#878787");
 					} else if (weatherIcon >= 200 && weatherIcon <= 232) {
 						// thunderstorm
-						$(".container").css("background", "#001548");
+						$(".weatherapp").css("background", "#001548");
 						$(".icon").html(
 							'<img src="img/thunderstorm.png" alt="thunderstorm">'
 						);

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900')
 
-// variables 
+// variables
 $yellow: #FFEC78
 $grey: #D0D2D1
 $blue: #8CAEFE
@@ -14,7 +14,8 @@ body, html
 	color: #fff
 	height: 100%
 	width: 100%
-	font-size: 18px
+	font-size: 16px
+	font-weight: 300
 	box-sizing: border-box
 
 a, a:hover, a:focus, a:visited
@@ -22,52 +23,64 @@ a, a:hover, a:focus, a:visited
 	color: #fff
 
 .container
-	background: $blue
+	position: relative
 	margin: 0 auto
 	height: 100%
 	width: 100%
-	
+
 .weatherapp
-	padding-top: 60px
-	height: 100%
-	width: 100%
+	position: relative
+	top: 5%
+	height: 600px
+	width: 350px
+	margin: auto
 	@media screen and (max-width: 768px)
-		padding-top: 5px
+		top: 0
+		height: 100%
+		width: 100%
 
 .city
+	position: absolute
+	top: 5%
 	width: 100%
+	font-size: 1rem
 	text-align: center
-	font-weight: 300
-	letter-spacing: 5px
 	text-transform: uppercase
-	padding: 30px 0
-	font-size: 21px
-	letter-spacing: 2.92px
+	letter-spacing: 3px
 
 .icon
-	text-align: center
-	
-.description
-	padding-top: 30px
+	position: absolute
+	top: 13%
 	width: 100%
 	text-align: center
-	font-weight: 300
-	letter-spacing: 2.92px
+
+.icon img
+	height: 100%
+
+.description
+	position: absolute
+	top: 48%
+	width: 100%
+	text-align: center
+	letter-spacing: 3px
 
 .temp
+	position: absolute
+	bottom: 19%
 	width: 100%
 	text-align: center
 	font-weight: 100
-	font-size: 144px
-	letter-spacing: 3.47px
+	font-size: 9rem
+	letter-spacing: 3.5px
 
 .temp:after
 	content: '˚'
 
-
 .button
+	position: absolute
+	bottom: 8%
+	width: 100%
 	text-align: center
-	padding-top: 5px
 
 .switch
 	text-align: center
@@ -94,7 +107,7 @@ a, a:hover, a:focus, a:visited
 	cursor: pointer
 	border-radius: 20px
 
-.slider:before 
+.slider:before
 	border-radius: 50%
 	position: absolute
 	content: ""
@@ -105,7 +118,7 @@ a, a:hover, a:focus, a:visited
 	-webkit-transition: .4s
 	transition: .4s
 
-input:checked + .slider:before 
+input:checked + .slider:before
 	-webkit-transform: translateX(45px)
 	-ms-transform: translateX(45px)
 	transform: translateX(45px)
@@ -137,7 +150,6 @@ input:checked + .slider:before
 	padding: 25px
 	position: relative
 	text-align: center
-	font-weight: 300
 	top: 30%
 	height: 100%
 
