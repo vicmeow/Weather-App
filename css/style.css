@@ -46,7 +46,7 @@ a, a:hover, a:focus, a:visited {
 
 .icon {
   position: absolute;
-  top: 13%;
+  top: 12%;
   width: 100%;
   text-align: center; }
 
@@ -57,6 +57,7 @@ a, a:hover, a:focus, a:visited {
   position: absolute;
   top: 48%;
   width: 100%;
+  padding-top: 10px;
   text-align: center;
   letter-spacing: 3px; }
 
